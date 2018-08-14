@@ -1,8 +1,9 @@
 //
 //  ChatViewController.swift
-//  
+//  FlashChat
 //
 //  Created by OLAJUWON on 8/14/18.
+//  Copyright © 2018 OLAJUWON. All rights reserved.
 //
 
 import UIKit

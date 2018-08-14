@@ -12,12 +12,12 @@
 		7F788A3321223A5A00684167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A3221223A5A00684167 /* Assets.xcassets */; };
 		7F788A3621223A5A00684167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A3421223A5A00684167 /* LaunchScreen.storyboard */; };
 		7F788A3E2122BE5000684167 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A3D2122BE5000684167 /* GoogleService-Info (1).plist */; };
-		7F788A43212305F000684167 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A42212305F000684167 /* ChatViewController.swift */; };
 		7F788A452123060900684167 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A442123060900684167 /* LogInViewController.swift */; };
 		7F788A472123062400684167 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A462123062400684167 /* RegisterViewController.swift */; };
 		7F788A492123064800684167 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A482123064800684167 /* WelcomeViewController.swift */; };
 		7F788A4B2123067B00684167 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A4A2123067B00684167 /* Message.swift */; };
 		7F788A4D21231B9900684167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A4C21231B9900684167 /* Main.storyboard */; };
+		7F788A4F21231DE900684167 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A4E21231DE900684167 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,12 @@
 		7F788A3521223A5A00684167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F788A3721223A5A00684167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F788A3D2122BE5000684167 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
-		7F788A42212305F000684167 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = /Users/BADGUY/Desktop/FlashChat/FlashChat/Model/ChatViewController.swift; sourceTree = "<absolute>"; };
 		7F788A442123060900684167 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		7F788A462123062400684167 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7F788A482123064800684167 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7F788A4A2123067B00684167 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7F788A4C21231B9900684167 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7F788A4E21231DE900684167 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C98B9973A9CCE0EF10C05FBB /* Pods-FlashChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashChat/Pods-FlashChat.debug.xcconfig"; sourceTree = "<group>"; };
 		DE17CAC2B825E9683F072A08 /* Pods-FlashChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashChat/Pods-FlashChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				7F788A2B21223A3C00684167 /* AppDelegate.swift */,
-				7F788A42212305F000684167 /* ChatViewController.swift */,
 				7F788A442123060900684167 /* LogInViewController.swift */,
 				7F788A462123062400684167 /* RegisterViewController.swift */,
 				7F788A482123064800684167 /* WelcomeViewController.swift */,
+				7F788A4E21231DE900684167 /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,11 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F788A43212305F000684167 /* ChatViewController.swift in Sources */,
 				7F788A492123064800684167 /* WelcomeViewController.swift in Sources */,
 				7F788A2C21223A3C00684167 /* AppDelegate.swift in Sources */,
 				7F788A4B2123067B00684167 /* Message.swift in Sources */,
 				7F788A452123060900684167 /* LogInViewController.swift in Sources */,
+				7F788A4F21231DE900684167 /* ChatViewController.swift in Sources */,
 				7F788A472123062400684167 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
