@@ -276,6 +276,7 @@
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="sendButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lXm-z1-a6E"/>
                                             <action selector="sendPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9e5-46-aXt"/>
                                         </connections>
                                     </button>
@@ -319,16 +320,17 @@
                     <navigationItem key="navigationItem" title="Flash Chat" id="OGj-fw-WBv">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="mz9-8w-6zi">
                             <connections>
-                                <action selector="logOutPressed:" destination="vXZ-lx-hvc" id="AiZ-zI-Rgo"/>
+                                <action selector="logOutPressed:" destination="vXZ-lx-hvc" id="ezW-4H-htN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="heightConstraint" destination="dyw-Nc-T3G" id="JPk-pd-pan"/>
-                        <outlet property="messageTableView" destination="7eI-kw-TVm" id="OYq-98-NhQ"/>
+                        <outlet property="heightConstraint" destination="dyw-Nc-T3G" id="tN6-Wg-Chc"/>
+                        <outlet property="messageTableView" destination="7eI-kw-TVm" id="E0G-0H-NOG"/>
+                        <outlet property="messageTextField" destination="W4K-YF-skl" id="ymx-6k-K6n"/>
                         <outlet property="messageTextfield" destination="W4K-YF-skl" id="rE7-AO-1UD"/>
-                        <outlet property="sendButton" destination="JiI-fB-I1v" id="Oxz-hw-PLC"/>
+                        <outlet property="sendButton" destination="JiI-fB-I1v" id="wDr-2S-omo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

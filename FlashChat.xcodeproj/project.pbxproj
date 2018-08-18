@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75C13CDCE56FF943B4D56ABA /* Pods_FlashChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1337A690849E1DBB06D7A26D /* Pods_FlashChat.framework */; };
+		7F01D8AB21286F0300E86750 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01D8A921286F0300E86750 /* CustomMessageCell.swift */; };
+		7F01D8AC21286F0400E86750 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F01D8AA21286F0300E86750 /* MessageCell.xib */; };
 		7F788A2C21223A3C00684167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F788A2B21223A3C00684167 /* AppDelegate.swift */; };
 		7F788A3321223A5A00684167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A3221223A5A00684167 /* Assets.xcassets */; };
 		7F788A3621223A5A00684167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F788A3421223A5A00684167 /* LaunchScreen.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		1337A690849E1DBB06D7A26D /* Pods_FlashChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F01D8A921286F0300E86750 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		7F01D8AA21286F0300E86750 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		7F788A2821223A3C00684167 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F788A2B21223A3C00684167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F788A3221223A5A00684167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F01D8AD21286F3200E86750 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F01D8A921286F0300E86750 /* CustomMessageCell.swift */,
+				7F01D8AA21286F0300E86750 /* MessageCell.xib */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		7F01D8AE2128811B00E86750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F788A3721223A5A00684167 /* Info.plist */,
+				7F788A3D2122BE5000684167 /* GoogleService-Info (1).plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7F788A1F21223A3B00684167 = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +97,7 @@
 				7F788A402123043B00684167 /* View */,
 				7F788A3F2123042E00684167 /* Model */,
 				7F788A3221223A5A00684167 /* Assets.xcassets */,
-				7F788A3721223A5A00684167 /* Info.plist */,
-				7F788A3D2122BE5000684167 /* GoogleService-Info (1).plist */,
+				7F01D8AE2128811B00E86750 /* Supporting Files */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -94,6 +115,7 @@
 			children = (
 				7F788A4C21231B9900684167 /* Main.storyboard */,
 				7F788A3421223A5A00684167 /* LaunchScreen.storyboard */,
+				7F01D8AD21286F3200E86750 /* Custom Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F01D8AC21286F0400E86750 /* MessageCell.xib in Resources */,
 				7F788A3621223A5A00684167 /* LaunchScreen.storyboard in Resources */,
 				7F788A4D21231B9900684167 /* Main.storyboard in Resources */,
 				7F788A3321223A5A00684167 /* Assets.xcassets in Resources */,
@@ -250,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F01D8AB21286F0300E86750 /* CustomMessageCell.swift in Sources */,
 				7F788A492123064800684167 /* WelcomeViewController.swift in Sources */,
 				7F788A2C21223A3C00684167 /* AppDelegate.swift in Sources */,
 				7F788A4B2123067B00684167 /* Message.swift in Sources */,
@@ -402,7 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olajuwon.FlashChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -421,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olajuwon.FlashChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
